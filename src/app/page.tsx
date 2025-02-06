@@ -20,7 +20,7 @@ export default function Home() {
             </code>
             .
           </li>
-          <li>superhero</li>
+          <li>66026055 Thithada nextjs2</li>
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
