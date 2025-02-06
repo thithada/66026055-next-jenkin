@@ -22,7 +22,7 @@ export default function Home() {
             Modern Website
           </motion.h1>
           <p className="text-gray-600 text-lg">
-            สร้างประสบการณ์ที่น่าประทับใจให้กับผู้ใช้งาน
+            66026055 Thithada
           </p>
         </section>
 
