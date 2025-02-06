@@ -1,51 +1,29 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
-import Link from "next/link";
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <div className="max-w-4xl mx-auto py-10">
-        <motion.h1
-          className="text-4xl font-bold text-center text-gray-800 mb-8"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Welcome to My Next.js Homepage
-        </motion.h1>
-        <motion.div
-          className="grid gap-6 sm:grid-cols-1 md:grid-cols-2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5 }}
-        >
-          <Card className="shadow-lg rounded-2xl">
-            <CardContent className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">About Us</h2>
-              <p className="text-gray-600">
-                Learn more about our mission, vision, and the team behind this project.
-              </p>
-              <Link href="/about">
-                <Button className="mt-4">Learn More</Button>
-              </Link>
-            </CardContent>
-          </Card>
+    <main className="min-h-screen p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold mb-6">
+          ยินดีต้อนรับ
+        </h1>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="p-6 bg-white rounded-lg shadow">
+            <h2 className="text-xl font-semibold mb-4">เกี่ยวกับเรา</h2>
+            <p>
+              เนื้อหาเกี่ยวกับเว็บไซต์ของคุณ...
+            </p>
+          </div>
 
-          <Card className="shadow-lg rounded-2xl">
-            <CardContent className="p-4">
-              <h2 className="text-2xl font-semibold mb-2">Get Started</h2>
-              <p className="text-gray-600">
-                Ready to dive in? Check out our resources and guides.
-              </p>
-              <Link href="/start">
-                <Button className="mt-4">Get Started</Button>
-              </Link>
-            </CardContent>
-          </Card>
-        </motion.div>
+          <div className="p-6 bg-white rounded-lg shadow">
+            <h2 className="text-xl font-semibold mb-4">บริการของเรา</h2>
+            <ul className="list-disc pl-5">
+              <li>บริการที่ 1</li>
+              <li>บริการที่ 2</li>
+              <li>บริการที่ 3</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  );
+    </main>
+  )
 }
