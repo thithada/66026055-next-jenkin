@@ -19,7 +19,7 @@ export default function Home() {
             className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-pink-600 mb-4"
             whileHover={{ scale: 1.05 }}
           >
-            Modern Website
+            66026055 Thithada
           </motion.h1>
           <p className="text-gray-600 text-lg">
             66026055 Thithada
